@@ -1,0 +1,10 @@
+#!/bin/sh
+ 
+ssh jenkins@127.0.0.1 <<EOF
+  mkdir ~/hello-jenkins
+  cd ~/hello-jenkins
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF
