@@ -1,8 +1,7 @@
 #!/bin/sh
  
 ssh jenkins@127.0.0.1 <<EOF
-  mkdir ~/hello-jenkins
-  cd ~/hello-jenkins
+  cd ~/lnxaca
   git pull
   npm install --production
   forever restartall
